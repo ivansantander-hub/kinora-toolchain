@@ -52,3 +52,14 @@ libc++). Licence: [`LICENSES/MIT-whisper.cpp.txt`](LICENSES/MIT-whisper.cpp.txt)
 One release per component version, named `<component>-<version>-<revision>`. Attach the zips and a
 `SHA256SUMS` file, add its table above, its licence under `LICENSES/` and, when it is copyleft, its
 source. Never attach anything that holds a secret.
+
+## AI models (ONNX)
+
+Converted with the scripts in `tools/models/` of the Kinora repository and checked against the original frameworks.
+
+| Release | File | Upstream | Licence | sha256 |
+| --- | --- | --- | --- | --- |
+| `models-mediapipe-1` | `blaze_face_short_range.onnx` | Google MediaPipe face detector | [Apache-2.0](LICENSES/Apache-2.0-mediapipe.txt) | `d9b4b7f64b0cf2ae08d6cae3e8c25100596543b89707278c6a4a54b11d301a01` |
+| `models-mediapipe-1` | `selfie_segmenter.onnx` | Google MediaPipe image segmenter | [Apache-2.0](LICENSES/Apache-2.0-mediapipe.txt) | `a133fa7cc8f01a66a153abb81180f390e890866f0a6edbe6cde2d37622651542` |
+| `models-htdemucs-1` | `htdemucs.onnx` | Meta Hybrid Transformer Demucs | [MIT](LICENSES/MIT-demucs.txt) | `bfb67367c837d63ea779014c850edcd80112d6b6c32c8090e099d6e2524e56bf` |
+| `models-realesrgan-1` | `realesr-general-x4v3.onnx` | Real-ESRGAN general x4 v3 | [BSD-3-Clause](LICENSES/BSD-3-Clause-Real-ESRGAN.txt) | `2ab312d7740ee33ce8ef5aa8503a1874e06b17b0c65c62f1f049973e33f9ffc0` |
